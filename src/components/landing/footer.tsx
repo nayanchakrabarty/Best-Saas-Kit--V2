@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { Zap, Github, Twitter, Linkedin, Mail } from "lucide-react"
+import { Zap, Twitter, Linkedin, Mail } from "lucide-react"
 
 const Footer = () => {
   const footerLinks = {
@@ -36,10 +36,10 @@ const Footer = () => {
   }
 
   const socialLinks = [
-    { name: "GitHub", href: "https://github.com", icon: Github },
+    //{ name: "GitHub", href: "https://github.com", icon: Github },
     { name: "Twitter", href: "https://twitter.com", icon: Twitter },
     { name: "LinkedIn", href: "https://linkedin.com", icon: Linkedin },
-    { name: "Email", href: "mailto:hello@aisaaskit.com", icon: Mail }
+    { name: "Email", href: "mailto:hello@nexz.com", icon: Mail }
   ]
 
   return (
@@ -51,9 +51,9 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <div className="flex items-center justify-center w-8 h-8 bg-primary rounded-lg">
-                <Zap className="w-5 h-5 text-primary-foreground" />
+                <Zap className="w-5 h-5 text-foreground" />
               </div>
-              <span className="text-xl font-bold text-foreground">AI SAAS Kit</span>
+              <span className="text-xl font-bold text-foreground">NexZ</span>
             </div>
             <p className="text-muted-foreground mb-6 max-w-sm">
               The ultimate toolkit for building AI-powered SAAS applications. 
@@ -158,7 +158,7 @@ const Footer = () => {
                 placeholder="Enter your email"
                 className="flex-1 px-3 py-2 bg-background border border-border rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
               />
-              <button className="px-4 py-2 bg-primary text-primary-foreground rounded-md text-sm font-medium hover:bg-primary/90 transition-colors">
+              <button className="px-4 py-2 bg-primary text-foreground rounded-md text-sm font-medium hover:bg-primary/90 transition-colors">
                 Subscribe
               </button>
             </div>
@@ -168,7 +168,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center">
           <div className="text-muted-foreground text-sm">
-            © 2024 AI SAAS Kit. All rights reserved.
+            © 2025 NexZ. All rights reserved.
           </div>
           <div className="flex items-center space-x-6 mt-4 md:mt-0">
             <span className="text-muted-foreground text-sm">Built with ❤️ using Next.js</span>

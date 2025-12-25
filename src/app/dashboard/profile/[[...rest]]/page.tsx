@@ -29,7 +29,7 @@ export default async function ProfilePage() {
           <CardContent className="space-y-4">
             <div className="flex items-center space-x-4">
               <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-                <span className="text-primary-foreground font-semibold">
+                <span className="text-foreground font-semibold">
                   {user?.name?.charAt(0) || "U"}
                 </span>
               </div>

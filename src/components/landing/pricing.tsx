@@ -45,7 +45,7 @@ const Pricing = ({ isAuthenticated = false }: PricingProps) => {
       ],
       cta: "Get Pro Access",
       popular: true,
-      variant: "default" as const
+      variant: "outline" as const
     },
     {
       name: "Enterprise",
@@ -99,8 +99,8 @@ const Pricing = ({ isAuthenticated = false }: PricingProps) => {
               className="relative"
             >
               {plan.popular && (
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <div className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-medium flex items-center space-x-1">
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
+                  <div className="bg-primary text-foreground px-4 py-1 rounded-full text-sm font-medium flex items-center space-x-1">
                     <Star className="w-4 h-4" />
                     <span>Most Popular</span>
                   </div>

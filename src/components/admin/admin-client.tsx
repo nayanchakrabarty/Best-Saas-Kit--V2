@@ -69,7 +69,7 @@ export function AdminClient({ children, adminUser }: AdminClientProps) {
                   className={cn(
                     "flex items-center space-x-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors",
                     isActive
-                      ? "bg-primary text-primary-foreground"
+                      ? "bg-primary text-foreground"
                       : "text-muted-foreground hover:text-foreground hover:bg-muted"
                   )}
                   onClick={() => setSidebarOpen(false)}
@@ -109,7 +109,7 @@ export function AdminClient({ children, adminUser }: AdminClientProps) {
                 className={cn(
                   "flex items-center space-x-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors",
                   isActive
-                    ? "bg-primary text-primary-foreground"
+                    ? "bg-primary text-foreground"
                     : "text-muted-foreground hover:text-foreground hover:bg-muted"
                 )}
               >

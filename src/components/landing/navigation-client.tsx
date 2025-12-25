@@ -32,9 +32,9 @@ export function NavigationClient({ session }: NavigationClientProps) {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
-              <Zap className="h-5 w-5 text-primary-foreground" />
+              <Zap className="h-5 w-5 text-foreground" />
             </div>
-            <span className="text-xl font-bold">Best SAAS Kit</span>
+            <span className="text-xl font-bold">NexZ</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -55,11 +55,11 @@ export function NavigationClient({ session }: NavigationClientProps) {
             <ThemeToggle />
             {!session ? (
               <>
-                <SignInButton>
-                  <Button variant="ghost">Sign In</Button>
+                <SignInButton variant="ghost">
+                  Sign In
                 </SignInButton>
-                <SignInButton>
-                  <Button>Get Started</Button>
+                <SignInButton variant="ghost">
+                  Get Started
                 </SignInButton>
               </>
             ) : (
@@ -107,11 +107,11 @@ export function NavigationClient({ session }: NavigationClientProps) {
               </div>
               {!session ? (
                 <>
-                  <SignInButton>
-                    <Button variant="ghost" className="w-full justify-start">Sign In</Button>
+                  <SignInButton variant="ghost" className="w-full justify-start">
+                    Sign In
                   </SignInButton>
-                  <SignInButton>
-                    <Button className="w-full">Get Started</Button>
+                  <SignInButton className="w-full">
+                    Get Started
                   </SignInButton>
                 </>
               ) : (

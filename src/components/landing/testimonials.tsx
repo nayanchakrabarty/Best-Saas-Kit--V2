@@ -167,7 +167,7 @@ const Testimonials = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors"
+                className="bg-primary text-foreground px-8 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors"
               >
                 Start Your Success Story
               </motion.button>

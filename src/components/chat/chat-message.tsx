@@ -39,7 +39,7 @@ export function ChatMessage({ message, isLoading = false }: ChatMessageProps) {
     )}>
       {!isUser && (
         <Avatar className="h-8 w-8 shrink-0">
-          <AvatarFallback className="bg-primary text-primary-foreground">
+          <AvatarFallback className="bg-primary text-foreground">
             <Bot className="h-4 w-4" />
           </AvatarFallback>
         </Avatar>
@@ -52,7 +52,7 @@ export function ChatMessage({ message, isLoading = false }: ChatMessageProps) {
         <div className={cn(
           "rounded-lg px-4 py-2 text-sm",
           isUser 
-            ? "bg-primary text-primary-foreground" 
+            ? "bg-primary text-foreground" 
             : "bg-muted text-muted-foreground"
         )}>
           {isLoading ? (

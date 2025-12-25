@@ -90,6 +90,7 @@ const Hero = () => {
           >
             <Button
               size="lg"
+              variant="outline"
               className="text-base font-medium px-6 py-3 h-12 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
               asChild
             >
